@@ -50,13 +50,14 @@ public class ValidateUserInfo {
     }
 
     public void checkPasswd(){
-        System.out.println("Enter Valid Password: ");
+        System.out.print("Enter Valid Password: ");
         String passwd = sc.nextLine();
 
-        if (Pattern.matches("[a-z]{8,}", passwd)){
+        if (Pattern.matches("^(?=.*[A-Z][a-z]).{8,}$", passwd)){
             System.out.println("Password is Correct!");
         }else {
             System.out.println("Wrong Password!");
         }
+        checkPasswd();
     }
 }
