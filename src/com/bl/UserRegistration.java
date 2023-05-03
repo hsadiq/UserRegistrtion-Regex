@@ -11,6 +11,7 @@ public class UserRegistration {
         user.checkValidEmail();
         user.checkMobileNum();
         user.checkPasswd();
+        user.checkSampleEmail();
 
     }
 }
