@@ -38,4 +38,14 @@ public class ValidateUserInfo {
             System.out.println("Wrong Email!!");
         }
     }
+    public void checkMobileNum(){
+        System.out.print("Enter Valid Mobile Number: ");
+        String mobNum = sc.nextLine();
+
+        if (Pattern.matches("^[0-9]{2,3} +[0-9]{10}", mobNum)){
+            System.out.println("Mobile Number is Valid");
+        }else {
+            System.out.println("Invalid Number!!");
+        }
+    }
 }
