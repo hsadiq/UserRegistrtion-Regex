@@ -48,4 +48,15 @@ public class ValidateUserInfo {
             System.out.println("Invalid Number!!");
         }
     }
+
+    public void checkPasswd(){
+        System.out.println("Enter Valid Password: ");
+        String passwd = sc.nextLine();
+
+        if (Pattern.matches("[a-z]{8,}", passwd)){
+            System.out.println("Password is Correct!");
+        }else {
+            System.out.println("Wrong Password!");
+        }
+    }
 }

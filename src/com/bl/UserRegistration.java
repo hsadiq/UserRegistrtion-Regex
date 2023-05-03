@@ -10,6 +10,7 @@ public class UserRegistration {
         user.checkLastName();
         user.checkValidEmail();
         user.checkMobileNum();
+        user.checkPasswd();
 
     }
 }
