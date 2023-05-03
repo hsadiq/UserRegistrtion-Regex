@@ -18,5 +18,14 @@ public class ValidateUserInfo {
             System.out.println("Invalid Input");
         }
     }
+    public void checkLastName(){
+        System.out.print("Enter Valid Last Name: ");
+        String lastName = sc.nextLine();
 
+        if (Pattern.matches("[A-Z]{1}+[a-z]{3,}", lastName)){
+            System.out.println("Last Name Is Valid");
+        }else {
+            System.out.println("Invalid LastName!!");
+        }
+    }
 }
